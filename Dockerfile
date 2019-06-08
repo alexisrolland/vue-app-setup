@@ -1,7 +1,7 @@
-FROM node:latest
+FROM node:lts-alpine
 
 # Working directory and mount volume
-ARG PROJECT_DIR=/srv/app
+ARG PROJECT_DIR=/srv
 RUN mkdir -p $PROJECT_DIR
 WORKDIR $PROJECT_DIR
 VOLUME $PROJECT_DIR
