@@ -9,8 +9,5 @@ VOLUME $PROJECT_DIR
 # Install Vue CLI
 RUN npm install -g @vue/cli
 
-# Copy entrypoint file
-COPY ./entrypoint.sh ./
-
-# Use entrypoint to generate project template
-ENTRYPOINT [ "./entrypoint.sh" ]
+# Expose port to access web app
+EXPOSE 8080
