@@ -12,8 +12,7 @@ Build Docker image.
 $ docker build -t vue-app-setup:latest .
 ```
 
-Run Docker container in interactive mode.
-Make sure you replace `<your_path>` with your target folder.
+Run Docker container in interactive mode. Make sure you replace `<your_path>` with your target folder.
 
 For Docker Desktop for Window (when using Docker on Windows Pro).
 ```
@@ -25,9 +24,9 @@ For Docker Toolbox (when using Docker on Windows Home).
 $ docker run -it -p 8080:8080 -v "/host_mnt/c/your_path:/srv/app" --rm vue-app-setup sh
 ```
 
-Generate project template.
+Generate project template. Make sure you replace `<project_name>` with your project name.
 ```
-$ vue create project_name
+$ vue create <project_name>
 ```
 
-Follow the instructions.
+Follow the Vue CLI instructions to generate the project template. Once you are done, the project template files can be found in the path provided above.
