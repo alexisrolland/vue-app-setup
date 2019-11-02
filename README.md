@@ -15,12 +15,12 @@ $ docker build -t vue-app-setup:latest .
 Run Docker container in interactive mode.
 Make sure you replace `<your_path>` with your target folder.
 
-For Docker Desktop for Window (when using Docker on Windows Pro)
+For Docker Desktop for Window (when using Docker on Windows Pro).
 ```
 $ docker run -it -p 8080:8080 -v "C:\your_path:/srv/app" --rm vue-app-setup sh
 ```
 
-For Docker Toolbox (when using Docker on Windows Home)
+For Docker Toolbox (when using Docker on Windows Home).
 ```
 $ docker run -it -p 8080:8080 -v "/host_mnt/c/your_path:/srv/app" --rm vue-app-setup sh
 ```
